@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+<html lang="pt-br">
+
+{% block title %} Unes universidade {% endblock %}
+
+{% block PageStyle %}<link rel="stylesheet" href="../static/CSS/Other.css">{% endblock %}
+
+{% block header2 %}Entre em contato:{% endblock %}
+
+
+
+{% block paragraphs %}
+<p> <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius dolorem tempore quo facilis
+    quisquam.</span> </p>
+{% endblock %}
+
+
+{% block header4 %}
+    <h1 style="border: 1px gray solid;"></h1>
+{% endblock %}
+
+
+{% block buttons %}
+<div>
+        <label for="email">Seu e-mail:</label>
+            <div>
+                <input type="email">
+            </div>
+    
+    </div>
+
+    <div>
+        <label for="assunto">Assunto:</label>
+            <div>
+                <input type="text">
+            </div>
+    </div>
+
+    <div>
+        <label for="descricao">Descrição:</label>
+            <div>
+                <textarea rows="2" cols="18"></textarea>
+         </div>
+    </div>
+
+    <div>
+        <button>Enviar</button>
+    </div>
+{% endblock %}

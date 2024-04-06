@@ -1,0 +1,18 @@
+body{
+    margin: 20px 150px 0px;
+    max-width: 80%;
+
+    background-image: url(../imgs/fundo.png);
+    background-size: 1024px 2512px;
+}
+
+
+.link {
+    float: right;
+    margin-top: 3%;
+}
+
+.pageEnd{
+    text-align: center;
+    font-size: 75%;
+}

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pt-br">
+
+<html>
+  <head>
+    {% block head %}
+    <link rel="stylesheet" href="../static/CSS/normalize.css">
+    {% block PageStyle %}{% endblock %}
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+
+
+
+    <title>{% block title %}{% endblock %}</title>
+
+
+    {% endblock %}
+  </head>
+
+
+
+  <body>
+    <div>
+        {% block header %} 
+        <img src="../static/imgs/logo.png" alt="Site_Logo">
+
+        <span class="link"> <a href="/">Home</a> |
+            <a href="/quem-somos">Quem-somos</a> |
+            <a href="/contato">Contato</a> </span>
+         {% endblock %}
+    </div>
+
+    <div>
+        <h1>{% block header2 %}  {% endblock %}</h1>
+    </div>
+
+        <div>
+            {% block cape%}
+            
+            {% endblock %}
+        </div>
+
+    <div>
+        {% block paragraphs %}
+
+
+        {% endblock %}
+    </div>
+
+    <div>
+        <h1>{% block header3 %}  {% endblock %}</h1>
+    <div>
+        
+
+
+    <div>
+        <ol>
+            {% block list %} 
+
+            {% endblock %}
+        </ol>
+    </div>
+
+
+
+    <div>
+        {% block header4 %} {% endblock %}
+    </div>
+
+    <div>
+        {% block paragraphs2 %}
+
+        {% endblock %}
+    </div>
+
+
+    <div>
+        {% block buttons %}
+
+        {% endblock %}
+    </div>
+
+
+      {% block PageEnd %}
+      <span class="pageEnd">
+        <h2>Todos os direitos reservados</h2>
+    </span>
+      {% endblock %}
+
+    </div>
+
+  </body>
+
+</html>
